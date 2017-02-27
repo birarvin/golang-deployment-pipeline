@@ -10,6 +10,7 @@ const version string = "2.0.1"
 
 func rootHandler(w http.ResponseWriter, r *http.Request) {
 	io.WriteString(w, "Current version: "+version)
+	io.WriteString(w, "Hello World")
 }
 
 func main() {
